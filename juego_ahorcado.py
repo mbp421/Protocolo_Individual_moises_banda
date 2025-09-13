@@ -21,23 +21,23 @@ def jugar_ahorcado():
     
     while intentos_restantes > 0:
         mostrar_tablero(palabra_secreta, letras_adivinadas)
-        letra = input("👉 Introduce una letra: ").lower()
+        letra = input(" Introduce una letra: ").lower()
         
         if letra in letras_adivinadas:  
-            print(" Ya has ingresado esta letra, intenta con otra. ")
+            print(" Ya has ingresado esta letra lentejaa, intenta con otra. ")
             continue
         
         if letra in palabra_secreta:
             letras_adivinadas.append(letra)
             # Aquí verificamos si ya adivinó todas las letras
             if set(palabra_secreta).issubset(set(letras_adivinadas)):
-                print(f" Felicidades, adivinaste la palabra: {palabra_secreta}")
+                print(f" Felicidades, sirve para algo, adivinaste la palabra: {palabra_secreta}")
                 break            
         else:
             intentos_restantes -= 1
-            print(f" La letra es incorrecta, te quedan {intentos_restantes} intentos.")
+            print(f" La letra es incorrecta cach@n, te quedan {intentos_restantes} intentos.")
     
     if intentos_restantes == 0:
-        print(f" Has perdido, la palabra secreta era: {palabra_secreta}")
+        print(f" Has perdido, tu no sirves, la palabra secreta era: {palabra_secreta}")
         
 jugar_ahorcado()
