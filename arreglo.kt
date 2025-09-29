@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 fun main() {
     // Arreglo de 10 enteros aleatorios (1..100)
-    val arreglo = IntArray(10) { Random.nextInt(1, 101) }
+    val arreglo = IntArray(10) { Random.nextInt(1, 100) }
 
     println("Arreglo creado: ${arreglo.joinToString(", ")}")
 
